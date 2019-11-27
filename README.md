@@ -57,9 +57,8 @@ Another emerging field is IoT - small devices, often running on battery power an
 
 To measure the size of objects serialized with XML and JSON, we set up a simple test. The scenario is a flight ticket rental system, where customers call travel agents to book one or more plane trips. A valid booking contains details about the list of flights to get to a destination and back(in case of a return flight), one ore more tickets and the total price. This is summarized by the model shown below. Bookings used in the test all consist of a departure route with five flights, a return route with two return flights and tickets for each of these flights. Every flight is uses has an airplane and two airports set. The serialized structure is a Java array containing this aggregate.
 
-<center>
 ![](./assets/UML.png)
-</center>
+
 Code to serialize these aggregate objects was written in Java, using two external libraries: `jackson-databind` version 2.10.0.pr1 and `jackson-dataformat-xml` version 2.9.8, both retrieved from Maven repositories and both belonging to the same family of libraries under the `com.fasterxml.jackson` namespace. Both serializers run using default options, with the exception of the XML having WRITE_XML_DECLARATION feature enabled.
 Reducing the number of bytes sent over the internet is not a new issue, because of this the internets protocol, HTTP, has a method to support data compression before transmission. One of the common algorithms for this is called GZip. Because of repetition of tags, XML is a great candidate for compression therefore in the memory benchmark below we included  the size after compression as well. Results of the memory benchmark are summarized in the table below.
 
