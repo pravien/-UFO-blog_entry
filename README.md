@@ -90,7 +90,7 @@ As seen from the table above, XML took almost three times as long to serialize w
 
 ### Conclussion
 
-This blog compared the transfering speeds between JSON and XML. The results discovered that JSON is a better alternative to XML, because is has transfering speeds which are substantially better. But this doesn’t mean that JSON is a better dataformat than XML. They both have there own use cases, but it is important for one to think about the differences in performance, when one is selecting the which data format to work with.
+This blog compared the transfering speeds between JSON and XML. The results discovered that JSON is a better alternative to XML, because is has transfering speeds which are substantially better. But this doesn’t mean that JSON is a better dataformat than XML. They both have their own use cases, but it is important for one to think about the differences in performance, when one is selecting the which data format to work with.
 If one is only looking for the best transmitting speed one should pick JSON over XML.
 
 
