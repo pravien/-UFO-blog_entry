@@ -97,7 +97,9 @@ As seen from the table above, XML took almost three times as long to serialize w
 ### Future work
 
 So in the future when starting a project one might consider what is needed, the speed for all different small devices and use JSON or use XML and then you will be able to perform alot of validation on the data through the meta data inside the data format.
+
 Another subject to touch upon could be that javascripts popularity is a factor in how people are preferring JSON and maybe don't even try to use XML.
+
 When talking about the speed of transferring data another format could be a binary format which is properly even faster but testing it on equal terms with JSON and XML would get an idea of how much the speed could improve.
 
 ### Conclussion
