@@ -1,11 +1,18 @@
-
-
 ### Abstract
 
 XML is inefficient for transferring data over the network.
 The market today puts more value on the transferring speed than ever before. 
 By using JSON one can improve the transferring speed by up to 2 times.
 IoT and mobile devices would benefit a lot from this.. 
+
+
+### Should you use JSON or XML?
+
+Have you ever wondered why some people are keen on using a specific format, does it serve a specific purpose or is it really just a personal prefference.
+We decided to put it to the test and look into this subject.
+We came up with a hypothesis based on what experience we have had in our "coding time".
+We had noticed that the XML format is alot bigger with all it's open and closing tags and it general structure so we went into this blog post with a hypothesis that
+XML is inefficient for transferring data over the network.
 
 
 ### XML - General Information
@@ -87,6 +94,10 @@ The memory benchmark suggests that both formats can achieve similar size after s
 
 As seen from the table above, XML took almost three times as long to serialize without compression, and twice as long when also using GZip to compress data. 
 
+### Future work
+
+So in the future when starting a project one might consider what is needed, the speed for all different small devices and use JSON or use XML and then you will be able to perfrom alot of validation on the data through the meta data inside the data format.
+When talking about the speed of transferring data another good format could be a binary format which is properly even faster but testing it would get an idea of how much the speed could improve.
 
 ### Conclussion
 
@@ -97,10 +108,10 @@ If one is only looking for the best transmitting speed one should pick JSON over
 
 ### References
 
-https://whatis.techtarget.com/definition/XML-Extensible-Markup-Language
+https://whatis.techtarget.com/definition/XML-Extensible-Markup-Language - 26/11-2019
 
-https://en.wikipedia.org/wiki/XML
+https://en.wikipedia.org/wiki/XML - 26/11-2019
 
-http://www.json.org/
+http://www.json.org/ - 26/11-2019
 
-https://stackoverflow.com/questions/4862310/json-and-xml-comparison
+https://stackoverflow.com/questions/4862310/json-and-xml-comparison - 26/11-2019
