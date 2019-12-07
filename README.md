@@ -10,8 +10,8 @@ IoT and mobile devices would benefit a lot from this..
 
 Have you ever wondered why some people are keen on using a specific format, does it serve a specific purpose or is it really just a personal prefference.
 We decided to put it to the test and look into this subject.
-We came up with a hypothesis based on what experience we have had in our "coding time".
-We had noticed that the XML format is alot bigger with all it's open and closing tags and it general structure so we went into this blog post with a hypothesis that
+We came up with a hypothesis based on what experience we have had from school and our work life.
+We had noticed that the XML format is alot bigger with all it's open and closing tags and it's general structure so we went into this blog post with a hypothesis that
 XML is inefficient for transferring data over the network.
 
 
@@ -96,8 +96,9 @@ As seen from the table above, XML took almost three times as long to serialize w
 
 ### Future work
 
-So in the future when starting a project one might consider what is needed, the speed for all different small devices and use JSON or use XML and then you will be able to perfrom alot of validation on the data through the meta data inside the data format.
-When talking about the speed of transferring data another good format could be a binary format which is properly even faster but testing it would get an idea of how much the speed could improve.
+So in the future when starting a project one might consider what is needed, the speed for all different small devices and use JSON or use XML and then you will be able to perform alot of validation on the data through the meta data inside the data format.
+Another subject to touch upon could be that javascripts popularity is a factor in how people are preferring JSON and maybe don't even try to use XML.
+When talking about the speed of transferring data another format could be a binary format which is properly even faster but testing it on equal terms with JSON and XML would get an idea of how much the speed could improve.
 
 ### Conclussion
 
