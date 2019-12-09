@@ -96,11 +96,17 @@ As seen from the table above, XML took almost three times as long to serialize w
 
 ### Future work
 
-So in the future when starting a project one might consider what is needed, the speed for all different small devices and use JSON or use XML and then you will be able to perform alot of validation on the data through the meta data inside the data format.
+As displayed above the format one choose too use can have a big impact on the perfomance of the project.
+So in the future when starting a project one might have to consider how important performance is for the project. So which format should one choose ? 
+This really depends on the what the scope of the project. If the project is centered arround sending big amount of data, one should look into parameters such as perfomance and validation.
 
-Another subject to touch upon could be that javascripts popularity is a factor in how people are preferring JSON and maybe don't even try to use XML.
+If one is looking for a data format which can provide a certain amount of validation and a documented structure, one should choose the XML format. This format uses a schema file to ensure that everyone who uses the format knows which fields are required. With XML you can also use schematron files, which a rule based validation language. By using Schematron files, one can validate and test, if the XML is structured in the correct way.
 
-When talking about the speed of transferring data another format could be a binary format which is properly even faster but testing it on equal terms with JSON and XML would get an idea of how much the speed could improve.
+If one of the most important parameters is performance on should take a closer look at the JSON format. As shown above the JSON format is much more light weight than XML. This makes it the perfect choice if one is working on project where perfomance is the only important parameter. A good example for an use case where JSON would be a better choice than XML is IoT. In IoT you have a lot of small embedded systems which only have one purpose, which is to monitor and send data. These devices do not contain a lot of computing power, so they are no so good at performing resource hungry task. 
+
+If performance is the only important parameter, one could take look into using a binary data format. The Binary dataformat would properly be faster than JSON. But this theory needs more testing and therefor it is out of this blogs scoope.
+
+In the future we might see a big shift towards JSON, this is due to the rising popularity of Javascript. We live in a time where more projects are stating too use fullstack Javascript. So XML might be phased out as a dataformat for small scale project, but will properly still exist in bigger enterprise systems.
 
 ### Conclussion
 
